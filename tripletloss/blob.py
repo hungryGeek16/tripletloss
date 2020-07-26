@@ -26,11 +26,11 @@ def im_list_to_blob(ims):
     return blob
 
 def prep_im_for_blob(im):
-    target_size = 224
+    target_size = 224  # Change this according to the caffemodel required input shape.
     pixel_means = np.array([[[102.9801, 115.9465, 122.7717]]])
     im = im.astype(np.float32, copy=False)
     im -= pixel_means
     im = cv2.resize(im, (224,224),
-                    interpolation=cv2.INTER_LINEAR)
+                    interpolation=cv2.INTER_LINEAR)  # Resizing the image
 
     return im
