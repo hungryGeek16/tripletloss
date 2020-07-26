@@ -1,4 +1,4 @@
-net: "/home/rahul/trip/train1.prototxt"
+net: "/home/rahul/trip/train1.prototxt" # Edit this path accordingly
 test_iter: 1
 test_interval: 1000
 base_lr: 0.05
@@ -10,5 +10,5 @@ max_iter: 400000
 momentum: 0.9
 weight_decay: 0.0005
 snapshot: 10000
-snapshot_prefix: "/home/rahul/trip/models/inc_res_softmax"
+snapshot_prefix: "/home/rahul/trip/models/inc_res_softmax" # Edith this path accoordingly.
 solver_mode: CPU
