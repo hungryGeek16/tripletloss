@@ -17,8 +17,6 @@ import config
 #import _init_paths
 import google.protobuf.text_format
 
-print(9)
-
 class SolverWrapper(object):
     """A simple wrapper around Caffe's solver.
     """
