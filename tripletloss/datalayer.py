@@ -30,20 +30,20 @@ class DataLayer(caffe.Layer):
         if self._index >= len(self.data_container._sample):
             self._index = 0
 #        print(self._triplet)
-        archor = self.data_container._sample[self._index]
+        archor = self.data_container._sample[self._index] 
         archor_personname = archor.split('/')[0]
         self._index = self._index + 1
-        while len(sample) < self._triplet:
+        while len(sample) < self._triplet: # Appending Anchors to the list
             sample.append(archor)
             #print("With Anchor",sample)
         # Sample positive samples
-        while len(sample) < self._triplet*2:       	
+        while len(sample) < self._triplet*2:       	# Appending Positive Anchors to the list
             picindex = random.randint(0,len(self.data_container._sample_person[archor_personname])-1)
             if (self.data_container._sample_person[archor_personname][picindex]) not in sample:
                 sample.append(self.data_container._sample_person[archor_personname][picindex])
             #print("With Positive",sample)     
         # Sample negative samples
-        while len(sample) < self._triplet*3:          
+        while len(sample) < self._triplet*3:          # Appending Negative Anchors to the list
             rand = random.randint(0,len(self.data_container._sample_person)-1)
             personname = list(self.data_container._sample_person.keys())[rand]
             if archor_personname == personname:
