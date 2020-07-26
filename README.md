@@ -42,7 +42,7 @@ python3 txt.py
 python3 train.py
 ```
 
-**Note: Befor running train.py, please make sure that you have set every path in every python file in tripletloss folder correctly.**
+**Note: Before running train.py, please make sure that you have set every path in every python file in tripletloss folder correctly.**
 
 ## Credits : David Lu  
 
