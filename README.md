@@ -24,7 +24,7 @@ This is an implementation of triplet loss function is in python layer which is a
 
 ## Steps to run the program:
 
-* Use txt.py to create list of images for traiing and place output file in data folder.
+* Use txt.py to create list of images for training and place output file in data folder.
 ```cpp
 python3 txt.py
 ```
