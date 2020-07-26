@@ -34,7 +34,6 @@ class TripletLayer(caffe.Layer):
         anchor_minibatch_db = []
         positive_minibatch_db = []
         negative_minibatch_db = []
-        print('Buttesh')
         for i in range((bottom[0]).num):
                 
             anchor_minibatch_db.append(bottom[0].data[i])
