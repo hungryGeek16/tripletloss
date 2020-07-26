@@ -10,8 +10,8 @@ IMAGEPATH = '/home/rahul/trip/images/'
 SNAPSHOT_ITERS = 10000
 
 # Max training iteration
-MAX_ITERS = 400000
+MAX_ITERS = 400000  # Number of epochs * number of labels
 
 # The number of samples in each minibatch
-BATCH_SIZE = 6
+BATCH_SIZE = 6  # number of images in each sample
 
