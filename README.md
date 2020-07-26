@@ -6,7 +6,7 @@
 
 * [Triplet Loss and Online Triplet Mining](https://omoindrot.github.io/triplet-loss)  
 
-This is an implementation of triplet loss function is in python layer which is a support provided by caffe. Semi-hard examples are used to train the network. Refer this [link] to compile caffe with python layer support.
+This is an implementation of triplet loss function is in python layer which is a support provided by caffe. Semi-hard examples are used to train the network. Refer this [link](https://github.com/luhaofang/tripletloss#setup) to compile caffe with python layer support.
 
 **Requirements**:
 
@@ -41,6 +41,8 @@ python3 txt.py
 ```cpp
 python3 train.py
 ```
+
+**Note: Befor running train.py, please make sure that you have set every path in every python file in tripletloss folder correctly.**
 
 ## Credits : David Lu  
 
