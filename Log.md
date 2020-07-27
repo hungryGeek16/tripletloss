@@ -18,3 +18,9 @@
 
 * If look every concept individually I'll run into same situation , so i have decided to look into the exact flow from start to end in caffe and them come to conclusion.
 
+### Knowledge Data Handling:
+
+* At first test net is run which called from caffe.cpp and then solver.cpp is called to caluclate loss.
+
+* So then after solver.cpp the selected gradient descent algo file is called and then datalayer is called for setting up bottoms and tops for every layer.
+
